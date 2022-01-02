@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Team Maker</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="section">
+      <h1 class="is-size-1 has-text-weight-bold">
+          Team Maker
+      </h1>
+      <form>
+        <div class="columns">
+          <div class="column">
+            <div class="field">
+              <label class="label" for="playerInput">Enter player name:</label>
+            </div>
+            <div class="field has-addons">
+              <div class="control is-expanded">
+                <input class="input" type="text" placeholder="Player Name" id="playerInput" required>
+              </div>
+              <div class="control">
+                <input class="button is-dark" type="submit" value="Add Player" id="addPlayerBtn">
+              </div>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="field">
+              <label class="label" for="amountOfTeamsSelect">How many teams?</label>
+            </div>
+            <div class="field has-addons">
+              <div class="control is-expanded">
+                <div class="select is-fullwidth">
+                  <select id="amountOfTeamsSelect">
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                  </select>
+                </div>
+              </div>
+              <div class="control">
+                <input class="button is-dark" type="submit" value="Create Teams" id="createTeamsBtn">
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+
+      <ul class="my-4" title="Players" id="playersList">
+      </ul>
+
+      <div class="columns is-flex-wrap-wrap" id="teams">
+      </div>
+    </div>
+  </div>
+
+  <script src="js/scripts.js"></script>
+</body>
+</html>
